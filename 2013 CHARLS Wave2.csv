@@ -1,0 +1,13 @@
+data frame,data,mean(is.na(data)),sum(is.na(data))
+a1,Demographic_Background,0.6415639,1730763
+a2,Family_Information,0.8613818,11027027
+a3,Family_Transfer,0.9181955,5859894
+a4,Health_Care_and_Insurance,0.8429155,8467916
+a5,Health_Status_and_Functioning,0.838952,18873605
+a6,Household_Income,0.9375299,15607817
+a7,Housing_Characteristics,0.1466076,56051
+a8,Individual_Income,0.7929866,1968387
+a9,Interviewer_Observation,0.4515173,173831
+a10,PSU,0,0
+a11,Weights,0.05583438,18679
+a12,Work_Retirement_and_Pension,0.8183454,10817557
