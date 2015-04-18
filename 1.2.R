@@ -21,37 +21,37 @@ ch135 <- read.dta(ch13filename[5],convert.factors=F)
 # n <- c(1:14)
 # name <- paste("da008_wa_1_",n,"_",sep="")
 
-i1 <- "1. Hypertension ¸ßÑªÑ¹²¡"
-i2 <- "2. Dyslipidemia (elevation of low density lipoprotein, triglycerides (TGs),and total cholesterol, or a low high density lipoprotein level) ÑªÖ¬Òì³££¨¸ßÑªÖ¬»òµÍÑªÖ¬£©"
-i3 <- "3. Diabetes or high blood sugar ÌÇÄò²¡»òÑªÌÇÉý¸ß£¨°üÀ¨ÌÇÄÍÁ¿Òì³£ºÍ¿Õ¸¹ÑªÌÇÉý¸ß£©"
-i4 <- "4. Cancer or malignant tumor (excluding minor skin cancers) °©Ö¢µÈ¶ñÐÔÖ×Áö£¨²»°üÀ¨Çá¶ÈÆ¤·ô°©£©"
-i5 <- "5. Chronic lung diseases, such as chronic bronchitis , emphysema ( excluding tumors, or cancer) ÂýÐÔ·Î²¿¼²»¼ÈçÂýÐÔÖ§Æø¹ÜÑ×»ò·ÎÆøÖ×¡¢·ÎÐÄ²¡£¨²»°üÀ¨Ö×Áö»ò°©£©"
-i6 <- "6. Liver disease (except fatty liver, tumors, and cancer) ¸ÎÔà¼²²¡£¨³ýÖ¬·¾¸Î¡¢Ö×Áö»ò°©Íâ£©"
-i7 <- "7. Heart attack, coronary heart disease, angina, congestive heart failure, or otherheart problems ÐÄÔà²¡£¨ÈçÐÄ¼¡¹£Èû¡¢¹ÚÐÄ²¡¡¢ÐÄ½ÊÍ´¡¢³äÑªÐÔÐÄÁ¦Ë¥½ßºÍÆäËûÐÄÔà¼²²¡£©"
-i8 <- "8. Stroke ÖÐ·ç"
-i9 <- "9. Kidney disease (except for tumor or cancer) ÉöÔà¼²²¡£¨²»°üÀ¨Ö×Áö»ò°©£©"
-i10 <- "10. Stomach or other digestive disease (except for tumor or cancer) Î¸²¿¼²²¡»òÏû»¯ÏµÍ³¼²²¡£¨²»°üÀ¨Ö×Áö»ò°©£©"
-i11 <- "11. Emotional, nervous, or psychiatric problems Çé¸Ð¼°¾«Éñ·½ÃæÎÊÌâ"
-i12 <- "12. Memory-related disease Óë¼ÇÒäÏà¹ØµÄ¼²²¡£¨ÈçÀÏÄê³Õ´ôÖ¢¡¢ÄÔÎ®Ëõ¡¢ÅÁ½ðÉ­Ö¢£©"
-i13 <- "13. Arthritis or rheumatism ¹Ø½ÚÑ×»ò·çÊª²¡"
-i14 <- "14. Asthma Ïø´­"
+i1 <- "1. Hypertension é«˜è¡€åŽ‹ç—…"
+i2 <- "2. Dyslipidemia (elevation of low density lipoprotein, triglycerides (TGs),and total cholesterol, or a low high density lipoprotein level) è¡€è„‚å¼‚å¸¸ï¼ˆé«˜è¡€è„‚æˆ–ä½Žè¡€è„‚ï¼‰"
+i3 <- "3. Diabetes or high blood sugar ç³–å°¿ç—…æˆ–è¡€ç³–å‡é«˜ï¼ˆåŒ…æ‹¬ç³–è€é‡å¼‚å¸¸å’Œç©ºè…¹è¡€ç³–å‡é«˜ï¼‰"
+i4 <- "4. Cancer or malignant tumor (excluding minor skin cancers) ç™Œç—‡ç­‰æ¶æ€§è‚¿ç˜¤ï¼ˆä¸åŒ…æ‹¬è½»åº¦çš®è‚¤ç™Œï¼‰"
+i5 <- "5. Chronic lung diseases, such as chronic bronchitis , emphysema ( excluding tumors, or cancer) æ…¢æ€§è‚ºéƒ¨ç–¾æ‚£å¦‚æ…¢æ€§æ”¯æ°”ç®¡ç‚Žæˆ–è‚ºæ°”è‚¿ã€è‚ºå¿ƒç—…ï¼ˆä¸åŒ…æ‹¬è‚¿ç˜¤æˆ–ç™Œï¼‰"
+i6 <- "6. Liver disease (except fatty liver, tumors, and cancer) è‚è„ç–¾ç—…ï¼ˆé™¤è„‚è‚ªè‚ã€è‚¿ç˜¤æˆ–ç™Œå¤–ï¼‰"
+i7 <- "7. Heart attack, coronary heart disease, angina, congestive heart failure, or otherheart problems å¿ƒè„ç—…ï¼ˆå¦‚å¿ƒè‚Œæ¢—å¡žã€å† å¿ƒç—…ã€å¿ƒç»žç—›ã€å……è¡€æ€§å¿ƒåŠ›è¡°ç«­å’Œå…¶ä»–å¿ƒè„ç–¾ç—…ï¼‰"
+i8 <- "8. Stroke ä¸­é£Ž"
+i9 <- "9. Kidney disease (except for tumor or cancer) è‚¾è„ç–¾ç—…ï¼ˆä¸åŒ…æ‹¬è‚¿ç˜¤æˆ–ç™Œï¼‰"
+i10 <- "10. Stomach or other digestive disease (except for tumor or cancer) èƒƒéƒ¨ç–¾ç—…æˆ–æ¶ˆåŒ–ç³»ç»Ÿç–¾ç—…ï¼ˆä¸åŒ…æ‹¬è‚¿ç˜¤æˆ–ç™Œï¼‰"
+i11 <- "11. Emotional, nervous, or psychiatric problems æƒ…æ„ŸåŠç²¾ç¥žæ–¹é¢é—®é¢˜"
+i12 <- "12. Memory-related disease ä¸Žè®°å¿†ç›¸å…³çš„ç–¾ç—…ï¼ˆå¦‚è€å¹´ç—´å‘†ç—‡ã€è„‘èŽç¼©ã€å¸•é‡‘æ£®ç—‡ï¼‰"
+i13 <- "13. Arthritis or rheumatism å…³èŠ‚ç‚Žæˆ–é£Žæ¹¿ç—…"
+i14 <- "14. Asthma å“®å–˜"
 
 i <- c(i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14)
 
-ic1 <- "1. ¸ßÑªÑ¹²¡"
-ic2 <- "2. ÑªÖ¬Òì³££¨¸ßÑªÖ¬»òµÍÑªÖ¬£©"
-ic3 <- "3. ÌÇÄò²¡»òÑªÌÇÉý¸ß£¨°üÀ¨ÌÇÄÍÁ¿Òì³£ºÍ¿Õ¸¹ÑªÌÇÉý¸ß£©"
-ic4 <- "4. °©Ö¢µÈ¶ñÐÔÖ×Áö£¨²»°üÀ¨Çá¶ÈÆ¤·ô°©£©"
-ic5 <- "5. ÂýÐÔ·Î²¿¼²»¼ÈçÂýÐÔÖ§Æø¹ÜÑ×»ò·ÎÆøÖ×¡¢·ÎÐÄ²¡£¨²»°üÀ¨Ö×Áö»ò°©£©"
-ic6 <- "6. ¸ÎÔà¼²²¡£¨³ýÖ¬·¾¸Î¡¢Ö×Áö»ò°©Íâ£©"
-ic7 <- "7. ÐÄÔà²¡£¨ÈçÐÄ¼¡¹£Èû¡¢¹ÚÐÄ²¡¡¢ÐÄ½ÊÍ´¡¢³äÑªÐÔÐÄÁ¦Ë¥½ßºÍÆäËûÐÄÔà¼²²¡£©"
-ic8 <- "8. ÖÐ·ç"
-ic9 <- "9. ÉöÔà¼²²¡£¨²»°üÀ¨Ö×Áö»ò°©£©"
-ic10 <- "10. Î¸²¿¼²²¡»òÏû»¯ÏµÍ³¼²²¡£¨²»°üÀ¨Ö×Áö»ò°©£©"
-ic11 <- "11. Çé¸Ð¼°¾«Éñ·½ÃæÎÊÌâ"
-ic12 <- "12. Óë¼ÇÒäÏà¹ØµÄ¼²²¡£¨ÈçÀÏÄê³Õ´ôÖ¢¡¢ÄÔÎ®Ëõ¡¢ÅÁ½ðÉ­Ö¢£©"
-ic13 <- "13. ¹Ø½ÚÑ×»ò·çÊª²¡"
-ic14 <- "14. Ïø´­"
+ic1 <- "1. é«˜è¡€åŽ‹ç—…"
+ic2 <- "2. è¡€è„‚å¼‚å¸¸ï¼ˆé«˜è¡€è„‚æˆ–ä½Žè¡€è„‚ï¼‰"
+ic3 <- "3. ç³–å°¿ç—…æˆ–è¡€ç³–å‡é«˜ï¼ˆåŒ…æ‹¬ç³–è€é‡å¼‚å¸¸å’Œç©ºè…¹è¡€ç³–å‡é«˜ï¼‰"
+ic4 <- "4. ç™Œç—‡ç­‰æ¶æ€§è‚¿ç˜¤ï¼ˆä¸åŒ…æ‹¬è½»åº¦çš®è‚¤ç™Œï¼‰"
+ic5 <- "5. æ…¢æ€§è‚ºéƒ¨ç–¾æ‚£å¦‚æ…¢æ€§æ”¯æ°”ç®¡ç‚Žæˆ–è‚ºæ°”è‚¿ã€è‚ºå¿ƒç—…ï¼ˆä¸åŒ…æ‹¬è‚¿ç˜¤æˆ–ç™Œï¼‰"
+ic6 <- "6. è‚è„ç–¾ç—…ï¼ˆé™¤è„‚è‚ªè‚ã€è‚¿ç˜¤æˆ–ç™Œå¤–ï¼‰"
+ic7 <- "7. å¿ƒè„ç—…ï¼ˆå¦‚å¿ƒè‚Œæ¢—å¡žã€å† å¿ƒç—…ã€å¿ƒç»žç—›ã€å……è¡€æ€§å¿ƒåŠ›è¡°ç«­å’Œå…¶ä»–å¿ƒè„ç–¾ç—…ï¼‰"
+ic8 <- "8. ä¸­é£Ž"
+ic9 <- "9. è‚¾è„ç–¾ç—…ï¼ˆä¸åŒ…æ‹¬è‚¿ç˜¤æˆ–ç™Œï¼‰"
+ic10 <- "10. èƒƒéƒ¨ç–¾ç—…æˆ–æ¶ˆåŒ–ç³»ç»Ÿç–¾ç—…ï¼ˆä¸åŒ…æ‹¬è‚¿ç˜¤æˆ–ç™Œï¼‰"
+ic11 <- "11. æƒ…æ„ŸåŠç²¾ç¥žæ–¹é¢é—®é¢˜"
+ic12 <- "12. ä¸Žè®°å¿†ç›¸å…³çš„ç–¾ç—…ï¼ˆå¦‚è€å¹´ç—´å‘†ç—‡ã€è„‘èŽç¼©ã€å¸•é‡‘æ£®ç—‡ï¼‰"
+ic13 <- "13. å…³èŠ‚ç‚Žæˆ–é£Žæ¹¿ç—…"
+ic14 <- "14. å“®å–˜"
 
 ic <- c(ic1,ic2,ic3,ic4,ic5,ic6,ic7,ic8,ic9,ic10,ic11,ic12,ic13,ic14)
 
@@ -86,5 +86,5 @@ s214 <- sum(ch135$da008_w2_1_14_ == 2,na.rm=TRUE)
 s1 <- c(s11,s12,s13,s14,s15,s16,s17,s18,s19,s110,s111,s112,s113,s114)
 s2 <- c(s21,s22,s23,s24,s25,s26,s27,s28,s29,s210,s211,s212,s213,s214)
 
-e1 <- data.frame(sort(s1),ic[order(s1)])
-e2 <- data.frame(sort(s2),ic[order(s2)])
+e1 <- data.frame(Cnt1 = sort(s1),Name = ic[order(s1)])
+e2 <- data.frame(Cnt2 = sort(s2),Name = ic[order(s2)])

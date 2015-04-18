@@ -15,7 +15,9 @@
 2. CGSS
 	1. 下载地址：
 	2. 本地路径：CGSS_PATH （请设置系统环境变量）
-
+3. RSAMPLE
+	1. git地址： 各自fork
+	2. 本地路径：RSAMPLE_PATH （请设置系统环境变量）
 
 ###提交要求
 1. 各学习者fork本git库到自己名下。

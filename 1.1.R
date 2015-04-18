@@ -39,4 +39,4 @@ ch13 <- list(ch131,ch132,ch133,ch134,ch135,ch136,ch137,ch138,ch139,ch1310,ch1311
 m13 <- c(1:12)
 for (i in (1:12)) {m13[i] <- mean(is.na(ch13[[i]]))}
 
-e1 <- data.frame(sort(m13),ch13name[order(m13)])
+e1 <- data.frame(naCnt = sort(m13), Dataset= ch13name[order(m13)])
