@@ -131,3 +131,79 @@ ch12all <- function() {
   
   return(ch12list)
 }
+
+ch11 <- function(x) {
+  oldwd <- getwd()
+  setwd(Sys.getenv("CHARLS_PATH")) 
+  
+  n1 <- "biomarkers"
+  n2 <- "community"
+  n3 <- "demographic_background"
+  n4 <- "family_information"
+  n5 <- "family_transfer"
+  n6 <- "health_care_and_insurance"
+  n7 <- "health_status_and_functioning"
+  n8 <- "household_income"
+  n9 <- "household_roster"
+  n10 <- "housing_characteristics"
+  n11 <- "individual_income"
+  n12 <- "interviewer_observation"
+  n13 <- "psu"
+  n14 <- "weight"
+  n15 <- "work_retirement_and_pension"
+  
+  ch11name <- c(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15)
+  ch11filename <- paste("2011.CHARLS.Wave1/",ch11name,".dta",sep="")  
+  
+  ch11x <- read.dta(ch11filename[x],convert.factors=F)
+  
+  setwd(oldwd)
+  
+  return(ch11x)
+}
+
+ch11all <- function() {
+  oldwd <- getwd()
+  setwd(Sys.getenv("CHARLS_PATH")) 
+  
+  n1 <- "biomarkers"
+  n2 <- "community"
+  n3 <- "demographic_background"
+  n4 <- "family_information"
+  n5 <- "family_transfer"
+  n6 <- "health_care_and_insurance"
+  n7 <- "health_status_and_functioning"
+  n8 <- "household_income"
+  n9 <- "household_roster"
+  n10 <- "housing_characteristics"
+  n11 <- "individual_income"
+  n12 <- "interviewer_observation"
+  n13 <- "psu"
+  n14 <- "weight"
+  n15 <- "work_retirement_and_pension"
+  
+  ch11name <- c(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15)
+  ch11filename <- paste("2011.CHARLS.Wave1/",ch11name,".dta",sep="")  
+  
+  ch111 <- read.dta(ch11filename[1],convert.factors=F)
+  ch112 <- read.dta(ch11filename[2],convert.factors=F)
+  ch113 <- read.dta(ch11filename[3],convert.factors=F)
+  ch114 <- read.dta(ch11filename[4],convert.factors=F)
+  ch115 <- read.dta(ch11filename[5],convert.factors=F)
+  ch116 <- read.dta(ch11filename[6],convert.factors=F)
+  ch117 <- read.dta(ch11filename[7],convert.factors=F)
+  ch118 <- read.dta(ch11filename[8],convert.factors=F)
+  ch119 <- read.dta(ch11filename[9],convert.factors=F)
+  ch1110 <- read.dta(ch11filename[10],convert.factors=F)
+  ch1111 <- read.dta(ch11filename[11],convert.factors=F)
+  ch1112 <- read.dta(ch11filename[12],convert.factors=F)
+  ch1113 <- read.dta(ch11filename[13],convert.factors=F)
+  ch1114 <- read.dta(ch11filename[14],convert.factors=F)
+  ch1115 <- read.dta(ch11filename[15],convert.factors=F)
+  
+  ch11list <- list(ch111,ch112,ch113,ch114,ch115,ch116,ch117,ch118,ch119,ch1110,ch1111,ch1112,ch1113,ch1114,ch1115)
+  
+  setwd(oldwd)
+  
+  return(ch11list)
+}
