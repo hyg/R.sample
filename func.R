@@ -227,5 +227,5 @@ wdi <- function(x) {
   
   setwd(oldwd)
   
-  return(dwix)
+  return(wdix)
 }
