@@ -207,3 +207,25 @@ ch11all <- function() {
   
   return(ch11list)
 }
+
+wdi <- function(x) {
+  oldwd <- getwd()
+  setwd(Sys.getenv("WDI_PATH")) 
+  
+  n1 <- "WDI_Country"
+  n2 <- "WDI_CS_Notes"
+  n3 <- "WDI_Data"
+  n4 <- "WDI_Description"
+  n5 <- "WDI_Footnotes"
+  n6 <- "WDI_Series"
+  n7 <- "WDI_ST_Notes"
+  
+  wdiname <- c(n1,n2,n3,n4,n5,n6,n7)
+  wdifilename <- paste(wdiname,".csv",sep="")  
+  
+  wdix <- read.csv(wdifilename[x],encoding="ansi")
+  
+  setwd(oldwd)
+  
+  return(dwix)
+}
