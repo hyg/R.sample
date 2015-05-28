@@ -15,7 +15,10 @@
 2. CGSS
 	1. 下载地址：
 	2. 本地路径：CGSS_PATH （请设置系统环境变量）
-3. RSAMPLE
+3. WDI
+	1. 下载地址：http://pan.baidu.com/s/1i31oycX
+	2. 本地路径：WDI_PATH （请设置系统环境变量）
+4. RSAMPLE
 	1. git地址： 各自fork
 	2. 本地路径：RSAMPLE_PATH （请设置系统环境变量）
 
